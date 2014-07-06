@@ -29,5 +29,6 @@ Inside event loop:
       {
         GenParticle * particle = (GenParticle*)branchParticle->At(i);
         GenParticlevec.push_back(*particle);
-      }//end of loop over "particles in history" 
-    double weight = dw.weight(1, GenParticlevec)
+      }//end of loop over "particles in history"
+    int isample = 1; // 1: TTbar, 0: All other samples
+    double weight = dw.weight(isample, GenParticlevec)
