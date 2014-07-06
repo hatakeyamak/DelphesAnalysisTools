@@ -2,7 +2,7 @@
 // 
 //       Filename:  DelWeight.cc
 // 
-//    Description:  A hack to restore the event  
+//    Description:  A hack to restore the event weight from BRIDGE
 // 
 //        Version:  1.0
 //       Compiler:  g++
