@@ -2,6 +2,10 @@
 This is a simple hack to give event weights to Delphes samples made from
 snowmass LHE files made using BRIDGE.
 
+Obtain this code:
+
+    git clone git@github.com:hatakeyamak/DelphesAnalysisTools.git
+
 For compile:
 needs -std=c++0x flag
 
