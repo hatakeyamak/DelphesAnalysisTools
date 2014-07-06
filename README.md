@@ -7,11 +7,12 @@ needs -std=c++0x flag
 
 In your analysis code:
 
-\#include "Delphes/external/ExRootAnalysis/ExRootTreeReader.h"
-\#include "Delphes/classes/DelphesClasses.h"
-\#include "DelWeight.h"
+    #include "Delphes/external/ExRootAnalysis/ExRootTreeReader.h"
+    #include "Delphes/classes/DelphesClasses.h"
+    #include "DelWeight.h"
 
 Before event loop:
+
     // For Delphes weights
     DelWeight dw;
     dw.initialize();
@@ -25,6 +26,4 @@ Inside event loop:
         GenParticle * particle = (GenParticle*)branchParticle->At(i);
         GenParticlevec.push_back(*particle);
       }//end of loop over "particles in history" 
-    std::cout << std::endl;
-
-double weight = dw.weight(1, GenParticlevec)
+    double weight = dw.weight(1, GenParticlevec)
