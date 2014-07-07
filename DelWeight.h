@@ -27,4 +27,6 @@ class DelWeight
  private:
   std::vector<double> weights_TT;
   std::vector<std::vector<int> > decays_TT;
+  std::vector<double> weights_BJ;
+  std::vector<std::vector<int> > decays_BJ;
 };
